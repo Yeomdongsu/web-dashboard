@@ -12,7 +12,7 @@ def main() :
 
     # petal_length와 petal_width의 관계를 차트로 그리시오.
 
-    # matplotlib이나 seaborn인 경우 
+    # matplotlib이나 seaborn을 이용한 경우 
     fig1 = plt.figure()
     plt.scatter(data= df, x="petal_length", y="petal_width")
     plt.title("Petal length vs width")
@@ -24,7 +24,7 @@ def main() :
     sb.regplot(data=df, x="petal_length", y="petal_width")
     st.pyplot(fig2)
 
-    # petal_length로 히스토그램 그리기
+    # petal_length 컬럼으로 히스토그램 그리기
     fig3 = plt.figure()
     plt.hist(data=df, x="petal_length" , rwidth=0.8, bins=20)
     st.pyplot(fig3)
