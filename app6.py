@@ -3,7 +3,6 @@ import streamlit as st
 def main():
 
     # 텍스트를 입력 받는 방법
-
     # text_input(이름(제목), max_charts=글자 수 제한, placeholder=예시, type=password(비밀번호))
     # text_area() 
     name = st.text_input("이름을 입력하세요!") # 엔터 시 변수에 값 할당
